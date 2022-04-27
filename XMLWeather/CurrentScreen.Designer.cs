@@ -78,13 +78,13 @@
             // 
             // tempLabel
             // 
-            this.tempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.tempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
             this.tempLabel.ForeColor = System.Drawing.Color.Black;
             this.tempLabel.Location = new System.Drawing.Point(269, 73);
             this.tempLabel.Name = "tempLabel";
             this.tempLabel.Size = new System.Drawing.Size(320, 150);
             this.tempLabel.TabIndex = 26;
-            this.tempLabel.Text = "Current Temperature";
+            this.tempLabel.Text = "currentTemp";
             this.tempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.tempLabel.Click += new System.EventHandler(this.tempLabel_Click);
             // 
@@ -93,7 +93,7 @@
             this.maxLabel.AutoSize = true;
             this.maxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.maxLabel.ForeColor = System.Drawing.Color.Red;
-            this.maxLabel.Location = new System.Drawing.Point(423, 223);
+            this.maxLabel.Location = new System.Drawing.Point(432, 194);
             this.maxLabel.Name = "maxLabel";
             this.maxLabel.Size = new System.Drawing.Size(57, 29);
             this.maxLabel.TabIndex = 31;
@@ -105,7 +105,7 @@
             this.minLabel.AutoSize = true;
             this.minLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.minLabel.ForeColor = System.Drawing.Color.Blue;
-            this.minLabel.Location = new System.Drawing.Point(356, 223);
+            this.minLabel.Location = new System.Drawing.Point(371, 194);
             this.minLabel.Name = "minLabel";
             this.minLabel.Size = new System.Drawing.Size(52, 29);
             this.minLabel.TabIndex = 29;
