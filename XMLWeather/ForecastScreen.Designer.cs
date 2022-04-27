@@ -52,6 +52,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -64,7 +65,7 @@
             this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
             this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.DarkGray;
-            this.forecastLabel.Location = new System.Drawing.Point(658, 62);
+            this.forecastLabel.Location = new System.Drawing.Point(397, 30);
             this.forecastLabel.Name = "forecastLabel";
             this.forecastLabel.Size = new System.Drawing.Size(83, 26);
             this.forecastLabel.TabIndex = 62;
@@ -75,7 +76,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(658, 90);
+            this.label3.Location = new System.Drawing.Point(486, 30);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 28);
             this.label3.TabIndex = 61;
@@ -85,8 +86,8 @@
             // min1
             // 
             this.min1.AutoSize = true;
-            this.min1.ForeColor = System.Drawing.Color.DarkGray;
-            this.min1.Location = new System.Drawing.Point(15, 255);
+            this.min1.ForeColor = System.Drawing.Color.Blue;
+            this.min1.Location = new System.Drawing.Point(90, 64);
             this.min1.Name = "min1";
             this.min1.Size = new System.Drawing.Size(23, 13);
             this.min1.TabIndex = 46;
@@ -95,8 +96,8 @@
             // max1
             // 
             this.max1.AutoSize = true;
-            this.max1.ForeColor = System.Drawing.Color.DarkGray;
-            this.max1.Location = new System.Drawing.Point(44, 255);
+            this.max1.ForeColor = System.Drawing.Color.Red;
+            this.max1.Location = new System.Drawing.Point(118, 64);
             this.max1.Name = "max1";
             this.max1.Size = new System.Drawing.Size(27, 13);
             this.max1.TabIndex = 44;
@@ -106,17 +107,18 @@
             // 
             this.date1.AutoSize = true;
             this.date1.ForeColor = System.Drawing.Color.DarkGray;
-            this.date1.Location = new System.Drawing.Point(15, 105);
+            this.date1.Location = new System.Drawing.Point(15, 64);
             this.date1.Name = "date1";
             this.date1.Size = new System.Drawing.Size(30, 13);
             this.date1.TabIndex = 64;
             this.date1.Text = "Date";
+            this.date1.Click += new System.EventHandler(this.date1_Click);
             // 
             // date2
             // 
             this.date2.AutoSize = true;
             this.date2.ForeColor = System.Drawing.Color.DarkGray;
-            this.date2.Location = new System.Drawing.Point(149, 105);
+            this.date2.Location = new System.Drawing.Point(182, 64);
             this.date2.Name = "date2";
             this.date2.Size = new System.Drawing.Size(30, 13);
             this.date2.TabIndex = 69;
@@ -125,8 +127,8 @@
             // min2
             // 
             this.min2.AutoSize = true;
-            this.min2.ForeColor = System.Drawing.Color.DarkGray;
-            this.min2.Location = new System.Drawing.Point(148, 255);
+            this.min2.ForeColor = System.Drawing.Color.Blue;
+            this.min2.Location = new System.Drawing.Point(272, 64);
             this.min2.Name = "min2";
             this.min2.Size = new System.Drawing.Size(30, 13);
             this.min2.TabIndex = 67;
@@ -135,8 +137,8 @@
             // max2
             // 
             this.max2.AutoSize = true;
-            this.max2.ForeColor = System.Drawing.Color.DarkGray;
-            this.max2.Location = new System.Drawing.Point(184, 255);
+            this.max2.ForeColor = System.Drawing.Color.Red;
+            this.max2.Location = new System.Drawing.Point(310, 64);
             this.max2.Name = "max2";
             this.max2.Size = new System.Drawing.Size(26, 13);
             this.max2.TabIndex = 65;
@@ -146,7 +148,7 @@
             // 
             this.date3.AutoSize = true;
             this.date3.ForeColor = System.Drawing.Color.DarkGray;
-            this.date3.Location = new System.Drawing.Point(283, 105);
+            this.date3.Location = new System.Drawing.Point(399, 64);
             this.date3.Name = "date3";
             this.date3.Size = new System.Drawing.Size(30, 13);
             this.date3.TabIndex = 69;
@@ -155,8 +157,8 @@
             // max3
             // 
             this.max3.AutoSize = true;
-            this.max3.ForeColor = System.Drawing.Color.DarkGray;
-            this.max3.Location = new System.Drawing.Point(317, 255);
+            this.max3.ForeColor = System.Drawing.Color.Red;
+            this.max3.Location = new System.Drawing.Point(524, 64);
             this.max3.Name = "max3";
             this.max3.Size = new System.Drawing.Size(26, 13);
             this.max3.TabIndex = 65;
@@ -165,8 +167,8 @@
             // min3
             // 
             this.min3.AutoSize = true;
-            this.min3.ForeColor = System.Drawing.Color.DarkGray;
-            this.min3.Location = new System.Drawing.Point(281, 255);
+            this.min3.ForeColor = System.Drawing.Color.Blue;
+            this.min3.Location = new System.Drawing.Point(488, 64);
             this.min3.Name = "min3";
             this.min3.Size = new System.Drawing.Size(30, 13);
             this.min3.TabIndex = 67;
@@ -176,7 +178,7 @@
             // 
             this.date4.AutoSize = true;
             this.date4.ForeColor = System.Drawing.Color.DarkGray;
-            this.date4.Location = new System.Drawing.Point(412, 105);
+            this.date4.Location = new System.Drawing.Point(15, 255);
             this.date4.Name = "date4";
             this.date4.Size = new System.Drawing.Size(30, 13);
             this.date4.TabIndex = 69;
@@ -185,8 +187,8 @@
             // max4
             // 
             this.max4.AutoSize = true;
-            this.max4.ForeColor = System.Drawing.Color.DarkGray;
-            this.max4.Location = new System.Drawing.Point(453, 255);
+            this.max4.ForeColor = System.Drawing.Color.Red;
+            this.max4.Location = new System.Drawing.Point(119, 255);
             this.max4.Name = "max4";
             this.max4.Size = new System.Drawing.Size(26, 13);
             this.max4.TabIndex = 65;
@@ -195,8 +197,8 @@
             // min4
             // 
             this.min4.AutoSize = true;
-            this.min4.ForeColor = System.Drawing.Color.DarkGray;
-            this.min4.Location = new System.Drawing.Point(417, 255);
+            this.min4.ForeColor = System.Drawing.Color.Blue;
+            this.min4.Location = new System.Drawing.Point(83, 255);
             this.min4.Name = "min4";
             this.min4.Size = new System.Drawing.Size(30, 13);
             this.min4.TabIndex = 67;
@@ -206,7 +208,7 @@
             // 
             this.date5.AutoSize = true;
             this.date5.ForeColor = System.Drawing.Color.DarkGray;
-            this.date5.Location = new System.Drawing.Point(551, 105);
+            this.date5.Location = new System.Drawing.Point(182, 255);
             this.date5.Name = "date5";
             this.date5.Size = new System.Drawing.Size(30, 13);
             this.date5.TabIndex = 69;
@@ -215,8 +217,8 @@
             // max5
             // 
             this.max5.AutoSize = true;
-            this.max5.ForeColor = System.Drawing.Color.DarkGray;
-            this.max5.Location = new System.Drawing.Point(587, 255);
+            this.max5.ForeColor = System.Drawing.Color.Red;
+            this.max5.Location = new System.Drawing.Point(287, 255);
             this.max5.Name = "max5";
             this.max5.Size = new System.Drawing.Size(26, 13);
             this.max5.TabIndex = 65;
@@ -225,8 +227,8 @@
             // min5
             // 
             this.min5.AutoSize = true;
-            this.min5.ForeColor = System.Drawing.Color.DarkGray;
-            this.min5.Location = new System.Drawing.Point(551, 255);
+            this.min5.ForeColor = System.Drawing.Color.Blue;
+            this.min5.Location = new System.Drawing.Point(247, 255);
             this.min5.Name = "min5";
             this.min5.Size = new System.Drawing.Size(30, 13);
             this.min5.TabIndex = 67;
@@ -237,7 +239,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(658, 30);
+            this.label1.Location = new System.Drawing.Point(308, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 38);
             this.label1.TabIndex = 62;
@@ -246,7 +248,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 130);
+            this.pictureBox1.Location = new System.Drawing.Point(18, 80);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(128, 122);
             this.pictureBox1.TabIndex = 71;
@@ -254,7 +256,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(152, 130);
+            this.pictureBox2.Location = new System.Drawing.Point(194, 80);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(128, 122);
             this.pictureBox2.TabIndex = 71;
@@ -262,7 +264,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(420, 130);
+            this.pictureBox3.Location = new System.Drawing.Point(18, 271);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(128, 122);
             this.pictureBox3.TabIndex = 71;
@@ -270,7 +272,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(554, 130);
+            this.pictureBox4.Location = new System.Drawing.Point(185, 271);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(128, 122);
             this.pictureBox4.TabIndex = 71;
@@ -278,7 +280,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(286, 130);
+            this.pictureBox5.Location = new System.Drawing.Point(402, 80);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(128, 122);
             this.pictureBox5.TabIndex = 71;
@@ -287,19 +289,31 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label2.ForeColor = System.Drawing.Color.DarkGray;
-            this.label2.Location = new System.Drawing.Point(41, 37);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(337, 271);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 31);
+            this.label2.Size = new System.Drawing.Size(121, 44);
             this.label2.TabIndex = 72;
             this.label2.Text = "label2";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(338, 334);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(289, 37);
+            this.label4.TabIndex = 73;
+            this.label4.Text = "UPCOMING DAYS";
             // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -325,7 +339,7 @@
             this.Controls.Add(this.min1);
             this.Controls.Add(this.max1);
             this.Name = "ForecastScreen";
-            this.Size = new System.Drawing.Size(765, 400);
+            this.Size = new System.Drawing.Size(630, 400);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -362,5 +376,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }

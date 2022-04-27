@@ -23,11 +23,14 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
+            //ges the date of the first day
+            currentDate.Text = Form1.days[0].date;
+            //converts days icons strong into an int for reading the conditions of the weather
             converted = Convert.ToInt32(Form1.days[0].icons);
             icons = converted;
 
             cityOutput.Text = Form1.days[0].location;
-
+            //gets the values of the min , max , and average temp and rounds them to the whole number
             temp1 = Form1.days[0].currentTemp;
             temp = Convert.ToDouble(temp1);
             tempLabel.Text = Math.Round(temp) + " C";
@@ -40,13 +43,11 @@ namespace XMLWeather
             temp = Convert.ToDouble(temp1);
             maxLabel.Text = Math.Round(temp) + " C";
 
-            slashLabel.Text = "/";
-
+            //if the icons value is a certain conditon, change the picture to the desired one
             if (icons == 800)
             {
                 pictureBox6.Image = Properties.Resources.sun;
                 BackColor = Color.LightBlue;
-              
             }
             if (icons >= 801 && icons <= 804)
             {
@@ -73,12 +74,9 @@ namespace XMLWeather
                 pictureBox6.Image = Properties.Resources.thunder;
                 BackColor = Color.DarkBlue;
             }
-
+            //displays the condition of the day
             conditionLabel.Text = Form1.days[0].condition;
-
         }
-
-
         private void forecastLabel_Click(object sender, EventArgs e)
         {
             Form f = this.FindForm();
@@ -96,6 +94,15 @@ namespace XMLWeather
             f.Controls.Add(fs);
         }
 
+        private void tempLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

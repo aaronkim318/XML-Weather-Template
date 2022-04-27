@@ -229,5 +229,10 @@ namespace XMLWeather
             SearchScreen cs = new SearchScreen();
             f.Controls.Add(cs);
         }
+
+        private void date1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

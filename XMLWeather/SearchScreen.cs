@@ -37,6 +37,8 @@ namespace XMLWeather
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //try and put information to both extract current and extract forecast.
+            //If it is not able to put it to extractForecast and excract current it will catch an output 
             try
             {
                 Form1.ExtractForecast(textBox1.Text);

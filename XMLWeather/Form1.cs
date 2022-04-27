@@ -20,7 +20,7 @@ namespace XMLWeather
         {
             InitializeComponent();
 
-            ExtractForecast("Stratford, CA");
+            ExtractForecast("Stratford");
             ExtractCurrent("Stratford, CA");
 
             // open weather screen for todays weather
@@ -30,17 +30,17 @@ namespace XMLWeather
 
         public static void ExtractForecast(string place)
         {
+            //clears the days list
             days.Clear();
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=" + place + 
-                ",CA&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
-         
 
+            //gets information from api
+            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=" + place +
+                ",CA&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
             while (reader.Read())
             {
                 // create a day object
                 Day newDay = new Day();
                 // fill day object with required data
-
                 reader.ReadToFollowing("time");
                 newDay.date = reader.GetAttribute("day");
 
@@ -56,21 +56,14 @@ namespace XMLWeather
                 {
                     days.Add(newDay);
                 }
-
             }
         }
-
-
 
         public static void ExtractCurrent(string place)
         {
             // allows you to search a certain city. You will be able to see accurate weather information at that certain place
-
-
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=" + place + 
+            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=" + place +
                  ",CA&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
-
-
             //finds the city and current conditions and temperature and adds to appropriate item in days list
             reader.ReadToFollowing("city");
             days[0].location = reader.GetAttribute("name");
@@ -81,14 +74,6 @@ namespace XMLWeather
             reader.ReadToFollowing("weather");
             days[0].icons = reader.GetAttribute("number");
             days[0].condition = reader.GetAttribute("value");
-
-
-
         }
-
-
-
-
-
     }
 }
